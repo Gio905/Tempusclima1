@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Videos del Producto</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 30px;
+      margin: 0;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #00796b;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .video {
+      width: 45%;
+      background: #ffffff;
+      border: 2px solid #b2dfdb;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .video h3 {
+      margin-top: 0;
+      color: #004d40;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-top: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌦️ Elige un video para conocer nuestro producto 🌡️</h1>
+
+  <div class="video-container">
+    <div class="video">
+      <h3>📹 como acceder a tempusclima ⛅</h3>
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/1089566013?h=d842ad44b8&badge=0&autopause=0&player_id=0&app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                title="como se usa"></iframe>
+      </div>
+    </div>
+
+    <div class="video">
+      <h3>📹 Qué es tempusclima 🌧️</h3>
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/1089565254?h=041bd74b69&badge=0&autopause=0&player_id=0&app_id=58479"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                title="tempusclima"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    ☀️ Gracias por tu interés en nuestro producto meteorológico.  
+    ¡Esperamos que te ayude a prever el clima como un profesional! 🌪️🌈
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
